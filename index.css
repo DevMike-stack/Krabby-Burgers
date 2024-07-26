@@ -5,7 +5,7 @@
 }
 body{
     margin: 100px 100px;
-    background-color: white;
+    background-color: rgb(226, 226, 226);
     color: black;
 }
 .top{
@@ -18,12 +18,13 @@ body{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    width: 1400px;
 }
 .list-items{
-    background-color: beige;
-    width: 37%;
+    background-color: rgb(187, 187, 176);
+    width: 300px;
     height: 100%;
     margin-top: 20px;
     transition: 2s;
@@ -54,7 +55,7 @@ body{
     left: 0;
     right: 0;
     background-color: #3b945e;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgb(226, 226, 226, 0.35);
     backdrop-filter: blur(10px);
     z-index: 100;
 }
@@ -66,8 +67,8 @@ body{
 }
 .logo h1{
     font-weight: 600;
-    font-family: sans-serif;
-    color: #F5F5DC;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(187, 187, 176);
 }
 .nav,.logo b{
     color: black;
@@ -101,13 +102,13 @@ body{
     font-weight: bold;
     font-family: sans-serif;
     font-size: 20px;
-    transition: transform 0.3s ease-in-out;
+    transition: 1s;
 }
 .nav ul li a:hover{
     font-size: 25px;
-    transform: 2s;
+    transform: scale(1.2);
 }
-.nav ul .active::after{
+/*.nav ul .active::after{
     content: '';
     width: 50px;
     height: 3px;
@@ -115,7 +116,7 @@ body{
     display: flex;
     position: relative;
     
-}
+}*/
 .nav ul .menu::after:hover{
     content: '';
     width: 50px;
@@ -135,20 +136,34 @@ input{
     border: none;
 }
 .signup{
-    background-color: #ff511c;
+    background-color: black;
     color: #ffffff;
     outline: none;
     border: none;
     border-radius: 5px;
+    margin-right: 10px;
+}
+.grid{
+    display: flex;
+    justify-content: flex-end; /* move the grid to the end */
+    align-items: center; /* center the grid vertically */
+    height: 100%; /* set a height for demonstration purposes */
+    /*background-color: #f0f0f0;  add a background color for demonstration purposes */
 }
 .content{
     display: grid;
     grid-template-columns: 50% auto;
-    gap: 30px;
-    margin-top: 120px;
+    margin-top: 150px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+.content .content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 .content .content-left .info{
     max-width: 100%;
@@ -172,15 +187,16 @@ input{
     margin-bottom: 30px;
     font-family: sans-serif;
 }
-.content .content-left button,
-.cart-btn{
+.content .content-left button{
     padding: 10px 23px;
-    background-color: #F5F5DC;
+    background-color: #131311;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .content .content-left button a{
     text-decoration: none;
@@ -193,7 +209,7 @@ input{
     border: none;
 }
 .content .content-right video{
-    width: 400px;
+    width: 500px;
     height: 440px;
     user-select: none;
     position: relative;
@@ -230,22 +246,11 @@ input{
     
 }
 
-.menu:hover{
-    text-decoration: underline;
-    opacity: 2;
-}
 
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
 .price{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     flex-direction: column;
 }
 
