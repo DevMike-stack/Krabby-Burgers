@@ -1,0 +1,21 @@
+#calendar-container {
+    position: relative;
+}
+  
+.calendar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+  
+.calendar th, .calendar td {
+    text-align: center;
+    padding: 5px;
+}
+  
+.calendar th {
+    background-color: #f0f0f0;
+}
